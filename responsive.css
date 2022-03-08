@@ -1,0 +1,440 @@
+@media only screen and (max-width: 1300px) {
+    .header p {
+        font-size: 8rem;
+        width: 90%;
+        margin-right: 1vw;
+        margin-left: 4%;
+        margin-top: 150px;
+    }
+
+    .article {
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .article .text-vr p:nth-of-type(1) {
+        padding: 0;
+        font-size: 4.2rem;
+        text-align: center;
+        margin: 30px 0 30px 0;
+    }
+
+    .article .text-vr p:nth-of-type(2) {
+        padding: 0;
+        font-size: 2rem;
+        color: #8c8c8c;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .our-creations {
+        grid-template-rows: 30px 30px repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        height: fit-content;
+    }
+
+    .our-creations .creation {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    .our-creations .button {
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 2;
+        margin-left: 58%;
+    }
+
+    .our-creations .deep-earth {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 2;
+        padding-bottom: 23px;
+    }
+
+    .our-creations .night-arcade {
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 2;
+    }
+
+    .our-creations .soccer-team {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    .our-creations .the-grid {
+        grid-row: 4 / span 1;
+        grid-column: 3 / span 2;
+    }
+
+    .our-creations .from-up {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    .our-creations .pocket-borealis {
+        grid-row: 5 / span 1;
+        grid-column: 3 / span 2;
+    }
+
+    .our-creations .the-curiosity {
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    .our-creations .make-it {
+        grid-row: 6 / span 1;
+        grid-column: 3 / span 2;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+
+    /*Changing th grid*/
+    .our-creations {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px repeat(8, 1fr) 60px;
+    }
+
+    .our-creations .creation {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        text-align: center;
+    }
+
+    .our-creations .creation p {
+        font-size: 5rem;
+    }
+
+    .our-creations .deep-earth {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-deep-earth.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .deep-earth p {
+        font-size: 4rem;
+    }
+
+    .our-creations .night-arcade {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-night-arcade.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .night-arcade p {
+        font-size: 4rem;
+    }
+
+    .our-creations .soccer-team {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-soccer-team.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .soccer-team p {
+        font-size: 4rem;
+    }
+
+    .our-creations .the-grid {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-grid.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .the-grid p {
+        font-size: 4rem;
+    }
+
+    .our-creations .from-up {
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-from-above.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .from-up p {
+        font-size: 4rem;
+    }
+
+    .our-creations .pocket-borealis {
+        grid-row: 7 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-pocket-borealis.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .pocket-borealis p {
+        font-size: 4rem;
+    }
+
+    .our-creations .the-curiosity {
+        grid-row: 8 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-curiosity.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .the-curiosity p {
+        font-size: 4rem;
+    }
+
+    .our-creations .make-it {
+        grid-row: 9 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("images/mobile/image-fisheye.jpg");
+        padding-top: 75px;
+        background-size: contain;
+    }
+
+    .our-creations .make-it p {
+        font-size: 4rem;
+    }
+
+    .our-creations .button {
+        grid-row: 10 / span 1;
+        grid-column: 1 / span 1;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .our-creations .button p {
+        margin-top: 30px;
+    }
+
+    .our-creations .button p a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    html {
+        font-size: 7.7px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media (min-width: 56rem) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        background-image: url(images/desktop/image-hero.jpg);
+        background-size: 100vw 100vh;
+        background-position: center;
+    }
+
+    .header .navbar {
+        padding: 50px 150px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .header .navbar .burgerBtn {
+        display: none;
+    }
+
+    .header .navbar .logo {
+        width: 200px;
+        height: 30px;
+        left: 10%;
+    }
+
+    .header .navbar .navigation {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: flex-end;
+        margin-top: 40px;
+        padding-right: 5%;
+    }
+
+    .header .navbar .navigation ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-right: 100px;
+    }
+
+    .header .navbar .navigation li {
+        list-style: none;
+    }
+
+    .header .navbar .navigation a {
+        text-transform: unset;
+        font-size: 0.9rem;
+        font-family: "Alata", sans-serif;
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        padding-bottom: 7px;
+    }
+
+    .header .navbar .navigation a::after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 1.5px;
+        top: 100%;
+        left: 10%;
+        background: white;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    .header .navbar .navigation a:hover {
+        content: "";
+        width: 1px;
+        height: 2px;
+        color: white;
+        position: relative;
+    }
+
+    .header .navbar .navigation a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 12%;
+        height: 200px;
+        margin-top: 200px;
+        margin-right: 0px;
+    }
+
+    footer .logo {
+        width: 30%;
+        height: 60px;
+        left: 12%;
+        position: absolute;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    footer .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    footer .footer-link {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        cursor: pointer;
+    }
+
+    footer .footer-link a {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        position: relative;
+    }
+
+    footer .footer-link a::after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 1.5px;
+        top: 100%;
+        left: 10%;
+        background: white;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    footer .footer-link a:hover {
+        content: "";
+        color: white;
+        position: relative;
+    }
+
+    footer .footer-link a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    footer .right-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 25px;
+        margin-top: -40px;
+        cursor: pointer;
+    }
+
+    footer .right-col .social-media {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .right-col .social-link {
+        position: relative;
+    }
+
+    footer .right-col .social-link::after {
+        content: "";
+        position: absolute;
+        background: white;
+        width: 80%;
+        height: 1.5px;
+        top: 80%;
+        left: 5px;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    footer .right-col .social-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    footer .copyright {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+* html {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+body {
+    height: 100vh;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 100vh;
+    content: "";
+    background-image: url(images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.burgerBtn {
+    content: "";
+    background-image: url(images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    transition: 0.2s ease-out;
+    position: absolute;
+    right: 10px;
+    z-index: 4;
+}
+
+.burgerBtn--active {
+    content: "";
+    background-image: url(images/icon-close.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+}
+
+.logo {
+    left: 20px;
+    height: 25px;
+    position: absolute;
+    z-index: 4;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    /*center;*/
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    /*%*/
+    height: 760px;
+    /*88%;*/
+    max-height: auto;
+    top: 0px;
+    left: 0px;
+    padding-left: 20px;
+    z-index: 3;
+    transition: 0.2s ease-out;
+    position: absolute;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 45px;
+}
+
+.burgerBtn--active+.header {
+    background-image: black;
+}
+
+.burgerBtn--active+.navigation {
+    display: flex;
+    width: 100%;
+    transition: max-height 0.2s ease-out;
+}
+
+.header p {
+    font-size: 6vw;
+    margin-right: 40vw;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 2px solid white;
+    padding: 1.9rem;
+    font-weight: 300;
+    color: white;
+    margin-top: 100px;
+    margin-left: 9%;
+}
+
+/* article */
+.article {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    height: fit-content;
+    margin-bottom: 100px;
+    transition: all 0.3s ease-in-out;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: minmax(150px, 360px) repeat(10, 1fr);
+}
+
+.article .img-vr {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 4;
+}
+
+.article .img-vr .vr-img {
+    width: 100%;
+    height: 100%;
+}
+
+.article .text-vr {
+    grid-row: 2 / span 2;
+    grid-column: 4 / span 10;
+    background-color: white;
+    padding: 30px 7.5em 30px 4em;
+}
+
+.article .text-vr p:nth-of-type(1) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.2vw;
+    margin-bottom: 15px;
+}
+
+.article .text-vr p:nth-of-type(2) {
+    font-size: 1.1vw;
+    color: hsl(0, 0%, 55%);
+}
+
+/* Our Creations Gallery */
+.our-creations {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    height: 900px;
+    margin-bottom: 130px;
+    grid-template-rows: 30px 20px repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.our-creations .creation {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    padding-top: 7px;
+}
+
+.our-creations .creation p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.2vw;
+}
+
+/* Button */
+
+.our-creations .button {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.our-creations .button p {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.our-creations .button p a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    border: thin solid black;
+    padding: 0.8rem 2.8rem;
+    transition: all 0.2s ease;
+}
+
+.our-creations .button p a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Deep Earth */
+
+.our-creations .deep-earth {
+    background-image: url("images/desktop/image-deep-earth.jpg");
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .deep-earth p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .deep-earth:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .deep-earth:hover p {
+    color: black;
+}
+
+/* Night Arcade */
+
+.our-creations .night-arcade {
+    background-image: url("images/desktop/image-night-arcade.jpg");
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .night-arcade p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .night-arcade:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .night-arcade:hover p {
+    color: black;
+}
+
+/* Soccer Team VR */
+.our-creations .soccer-team {
+    background-image: url("images/desktop/image-soccer-team.jpg");
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .soccer-team p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .soccer-team:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .soccer-team:hover p {
+    color: black;
+}
+
+/* The Grid */
+
+.our-creations .the-grid {
+    background-image: url("images/desktop/image-grid.jpg");
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .the-grid p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .the-grid:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .the-grid:hover p {
+    color: black;
+}
+
+/* From Up Above VR */
+.our-creations .from-up {
+    background-image: url("images/desktop/image-from-above.jpg");
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .from-up p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .from-up:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .from-up:hover p {
+    color: black;
+}
+
+/* Pocket Borealis */
+
+.our-creations .pocket-borealis {
+    background-image: url("images/desktop/image-pocket-borealis.jpg");
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .pocket-borealis p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .pocket-borealis:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .pocket-borealis:hover p {
+    color: black;
+}
+
+/* The Curiosity */
+.our-creations .the-curiosity {
+    background-image: url("images/desktop/image-curiosity.jpg");
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .the-curiosity p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .the-curiosity:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .the-curiosity:hover p {
+    color: black;
+}
+
+/* Make It Fisheye */
+
+.our-creations .make-it {
+    background-image: url("images/desktop/image-fisheye.jpg");
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15em;
+    padding-left: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .make-it p {
+    color: white;
+    font-size: 2.8vw;
+    margin-bottom: 0.8em;
+}
+
+.our-creations .make-it:hover {
+    box-shadow: inset 0 0 0 300px rgba(254, 254, 255, 0.5);
+}
+
+.our-creations .make-it:hover p {
+    color: black;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    color: white;
+    padding: 60px 30px;
+}
+
+footer .logo {
+    margin-bottom: 20px;
+    display: block;
+    left: 31%;
+}
+
+footer .footer-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-bottom: 25px;
+}
+
+footer .footer-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer .right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .social-media img {
+    margin: 20px 6px;
+    width: 26px;
+    height: 26px;
+}
+
+footer .copyright {
+    color: #8c8c8c;
+    font-size: 2rem;
+}
