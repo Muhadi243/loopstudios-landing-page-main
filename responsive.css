@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1300px) {
     .header p {
-        font-size: 8rem;
+        font-size: 7rem;
         width: 90%;
         margin-right: 1vw;
         margin-left: 4%;
@@ -115,96 +115,112 @@
         grid-row: 2 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-deep-earth.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .deep-earth p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .night-arcade {
         grid-row: 3 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-night-arcade.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .night-arcade p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .soccer-team {
         grid-row: 4 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-soccer-team.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .soccer-team p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .the-grid {
         grid-row: 5 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-grid.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .the-grid p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .from-up {
         grid-row: 6 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-from-above.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .from-up p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .pocket-borealis {
         grid-row: 7 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-pocket-borealis.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .pocket-borealis p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .the-curiosity {
         grid-row: 8 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-curiosity.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .the-curiosity p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .make-it {
         grid-row: 9 / span 1;
         grid-column: 1 / span 1;
         background-image: url("images/mobile/image-fisheye.jpg");
-        padding-top: 75px;
-        background-size: contain;
+        padding-top: 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 80vw;
     }
 
     .our-creations .make-it p {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .our-creations .button {
@@ -260,7 +276,7 @@
     }
 
     .header {
-        background-image: url(images/desktop/image-hero.jpg);
+        background-image: url("images/desktop/image-hero.jpg");
         background-size: 100vw 100vh;
         background-position: center;
     }
